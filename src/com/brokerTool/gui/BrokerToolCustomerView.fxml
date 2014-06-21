@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="467.0" prefWidth="676.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.brokerTool.gui.BrokerToolCustomerController">
+  <children>
+    <Pane fx:id="customerPane" prefHeight="467.0" prefWidth="665.0">
+      <children>
+        <TableView fx:id="customerTable" layoutX="14.0" layoutY="14.0" onMouseClicked="#handleMouseClick" prefHeight="404.0" prefWidth="529.0">
+          <columns>
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="36.0" text="Id" fx:id="customer_id" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="122.0" text="Account" fx:id="account" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="128.0" text="Fullname" fx:id="fullname" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="242.0" text="Address" fx:id="address" />
+          </columns>
+        </TableView>
+        <Button layoutX="558.0" layoutY="15.0" mnemonicParsing="false" onAction="#showShares" prefHeight="25.9609375" prefWidth="106.0" text="View shares" />
+        <Button layoutX="558.0" layoutY="95.0" mnemonicParsing="false" onAction="#handleSelectButton" prefHeight="25.9609375" prefWidth="106.0" text="Select" />
+        <Button layoutX="558.0" layoutY="54.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="25.9609375" prefWidth="106.0" text="Delete" />
+        <Button layoutX="14.0" layoutY="430.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="25.9609375" prefWidth="56.0" text="Add" />
+        <TextField fx:id="account_field" layoutX="79.0" layoutY="432.0" prefHeight="25.9609375" prefWidth="113.0" promptText="Account" text="" />
+        <TextField fx:id="address_field" layoutX="351.0" layoutY="432.0" prefHeight="25.9609375" prefWidth="192.0" promptText="Address" text="" />
+        <TextField fx:id="fullname_field" layoutX="208.0" layoutY="432.0" prefHeight="25.9609375" prefWidth="130.0" promptText="Fullname" text="" />
+        <Button layoutX="558.0" layoutY="136.0" mnemonicParsing="false" onAction="#handleUpdateButton" prefHeight="25.9609375" prefWidth="106.0" text="Update" />
+        <Button layoutX="558.0" layoutY="178.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="25.9609375" prefWidth="106.0" text="Back" />
+        <Label layoutX="556.0" layoutY="392.0" prefHeight="25.9609375" prefWidth="106.0" text="" />
+      </children>
+    </Pane>
+  </children>
+</VBox>
